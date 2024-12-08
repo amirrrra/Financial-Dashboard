@@ -1,5 +1,5 @@
-abstract class Assets {
-  Assets._();
+abstract class AppImages {
+  AppImages._();
 
   static const add = "assets/images/add.svg";
 
