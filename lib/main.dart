@@ -1,5 +1,6 @@
 import 'package:financial_dashboard/utils/app_colors.dart';
 import 'package:financial_dashboard/utils/constants.dart';
+import 'package:financial_dashboard/views/home_view.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -12,6 +13,7 @@ class FinancialDashboard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      home: const HomeView(),
       theme: ThemeData(
         textTheme: const TextTheme(
           bodyMedium: TextStyle(
