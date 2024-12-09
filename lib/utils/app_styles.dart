@@ -61,6 +61,7 @@ abstract class AppStyles {
       fontSize: getResponsiveFontSize(context, 14),
       fontWeight: FontWeight.bold,
       fontFamily: Constants.lato,
+      color: AppColors.greyC7,
     );
   }
 

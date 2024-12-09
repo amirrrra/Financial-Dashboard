@@ -10,10 +10,9 @@ class DrawerItemActiveWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Card(
-      elevation: 0,
-      color: AppColors.iceF,
-      shape: const RoundedRectangleBorder(
+    return Container(
+      decoration: const BoxDecoration(
+        color: AppColors.iceF,
         borderRadius: BorderRadius.all(
           Radius.circular(8),
         ),
