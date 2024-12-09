@@ -29,9 +29,11 @@ flutter:
     - assets/images/
 
   fonts:
-    - family: Supreme
+    - family: Gilroy
       fonts:
-        - asset: assets/fonts/Supreme-Regular.otf
+        - asset: assets/fonts/Gilroy-Regular.ttf
+        - asset: assets/fonts/Gilroy-SemiBold.ttf
+          weight: 600
  
     - family: Quicksand
       fonts:

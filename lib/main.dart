@@ -18,7 +18,7 @@ class FinancialDashboard extends StatelessWidget {
         textTheme: const TextTheme(
           bodyMedium: TextStyle(
             color: AppColors.primaryColor,
-            fontFamily: Constants.supreme,
+            fontFamily: Constants.gilroy,
           ),
         ),
       ),

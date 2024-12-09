@@ -4,52 +4,52 @@ import 'package:financial_dashboard/utils/size_config.dart';
 import 'package:flutter/material.dart';
 
 abstract class AppStyles {
-  static TextStyle remaRegular8(BuildContext context) {
+  static TextStyle gilroyRegular9(BuildContext context) {
     return TextStyle(
-      fontSize: getResponsiveFontSize(context, 8),
+      fontSize: getResponsiveFontSize(context, 9),
     );
   }
 
-  static TextStyle remaRegular12(BuildContext context) {
+  static TextStyle gilroyRegular12(BuildContext context) {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, 12),
     );
   }
 
-  static TextStyle remaRegular14(BuildContext context) {
+  static TextStyle gilroyRegular14(BuildContext context) {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, 14),
     );
   }
 
-  static TextStyle remaRegular16(BuildContext context) {
+  static TextStyle gilroyRegular16(BuildContext context) {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, 16),
       color: AppColors.greyAe,
     );
   }
 
-  static TextStyle remaRegular20(BuildContext context) {
+  static TextStyle gilroyRegular20(BuildContext context) {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, 20),
     );
   }
 
-  static TextStyle remaSemi14(BuildContext context) {
+  static TextStyle gilroySemi14(BuildContext context) {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, 14),
       fontWeight: FontWeight.w600,
     );
   }
 
-  static TextStyle remaSemi20(BuildContext context) {
+  static TextStyle gilroySemi20(BuildContext context) {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, 20),
       fontWeight: FontWeight.w600,
     );
   }
 
-  static TextStyle remaSemi44(BuildContext context) {
+  static TextStyle gilroySemi44(BuildContext context) {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, 44),
       fontWeight: FontWeight.w600,
@@ -120,8 +120,8 @@ abstract class AppStyles {
   static TextStyle latoMedium12(BuildContext context) {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, 12),
-      fontWeight: FontWeight.w500,
-      fontFamily: Constants.lato,
+      fontWeight: FontWeight.w600,
+      fontFamily: Constants.gilroy,
       color: AppColors.white,
     );
   }
@@ -139,7 +139,7 @@ abstract class AppStyles {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, 11),
       fontWeight: FontWeight.bold,
-      fontFamily: Constants.quicksand,
+      fontFamily: Constants.gilroy,
     );
   }
 
