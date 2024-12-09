@@ -9,7 +9,7 @@ class DrawerWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Padding(
-      padding: EdgeInsets.symmetric(horizontal: 20),
+      padding: EdgeInsets.symmetric(horizontal: 30),
       child: CustomScrollView(
         slivers: [
           SliverToBoxAdapter(

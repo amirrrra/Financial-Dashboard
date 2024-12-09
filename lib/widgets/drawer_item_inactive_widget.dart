@@ -4,9 +4,9 @@ import 'package:financial_dashboard/utils/app_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-class DrawerBodyItemWidget extends StatelessWidget {
+class DrawerItemInactiveWidget extends StatelessWidget {
   final DrawerModel drawerModel;
-  const DrawerBodyItemWidget({super.key, required this.drawerModel});
+  const DrawerItemInactiveWidget({super.key, required this.drawerModel});
 
   @override
   Widget build(BuildContext context) {

@@ -1,6 +1,6 @@
 import 'package:financial_dashboard/models/drawer_model.dart';
 import 'package:financial_dashboard/utils/app_images.dart';
-import 'package:financial_dashboard/widgets/drawer_body_item_widget.dart';
+import 'package:financial_dashboard/widgets/drawer_item_active_widget.dart';
 import 'package:flutter/material.dart';
 
 class DrawerBodyWidget extends StatelessWidget {
@@ -20,7 +20,7 @@ class DrawerBodyWidget extends StatelessWidget {
       children: List.generate(
         6,
         (index) {
-          return DrawerBodyItemWidget(
+          return DrawerItemActiveWidget(
             drawerModel: drawerItems[index],
           );
         },
