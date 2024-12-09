@@ -11,7 +11,12 @@ class DrawerHeaderWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        SvgPicture.asset(AppImages.cloudcash),
+        SvgPicture.asset(
+          AppImages.cloudcash,
+          fit: BoxFit.scaleDown,
+          height: 50,
+          width: 50,
+        ),
         Text(
           'cloudcash',
           style: AppStyles.quickBold16(context).copyWith(
