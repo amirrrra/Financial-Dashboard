@@ -1,3 +1,4 @@
+import 'package:financial_dashboard/utils/app_colors.dart';
 import 'package:financial_dashboard/widgets/adaptive_layout.dart';
 import 'package:financial_dashboard/widgets/layout_desktop_widget.dart';
 import 'package:financial_dashboard/widgets/layout_mobile_widget.dart';
@@ -10,6 +11,7 @@ class HomeView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: AppColors.white,
       body: AdaptiveLayout(
         mobileLayout: (context) => const LayoutMobileWidget(),
         tabletLayout: (context) => const LayoutTabletWidget(),
