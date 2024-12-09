@@ -135,11 +135,12 @@ abstract class AppStyles {
     );
   }
 
-  static TextStyle quickBold11(BuildContext context) {
+  static TextStyle quickBold14(BuildContext context) {
     return TextStyle(
-      fontSize: getResponsiveFontSize(context, 11),
+      fontSize: getResponsiveFontSize(context, 14),
       fontWeight: FontWeight.bold,
       fontFamily: Constants.gilroy,
+      color: AppColors.primaryColor,
     );
   }
 
