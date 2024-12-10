@@ -1,5 +1,6 @@
 import 'package:financial_dashboard/utils/app_styles.dart';
 import 'package:financial_dashboard/widgets/card_cloudcash_widget.dart';
+import 'package:financial_dashboard/widgets/custom_container_widget.dart';
 import 'package:flutter/material.dart';
 
 class CardWidget extends StatelessWidget {
@@ -7,8 +8,9 @@ class CardWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Card(
+    return CustomContainerWidget(
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
             'Cards',
@@ -24,6 +26,7 @@ class CardWidget extends StatelessWidget {
               Expanded(
                 flex: 1,
                 child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.end,
                   children: [
                     Text.rich(
                       TextSpan(

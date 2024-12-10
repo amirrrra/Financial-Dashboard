@@ -20,6 +20,7 @@ abstract class AppStyles {
   static TextStyle regular14(BuildContext context) {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, 14),
+      color: AppColors.greyAe
     );
   }
 
