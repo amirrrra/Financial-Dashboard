@@ -1,5 +1,7 @@
+import 'package:financial_dashboard/utils/app_colors.dart';
 import 'package:financial_dashboard/utils/app_styles.dart';
 import 'package:financial_dashboard/widgets/card_left_section.dart';
+import 'package:financial_dashboard/widgets/card_right_section.dart';
 import 'package:financial_dashboard/widgets/custom_container_widget.dart';
 import 'package:flutter/material.dart';
 
@@ -9,50 +11,35 @@ class CardWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CustomContainerWidget(
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Text(
-            'Cards',
-            style: AppStyles.semi20(context),
-          ),
-          Row(
+      child: IntrinsicHeight(
+        child: Padding(
+          padding: const EdgeInsets.all(20),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Expanded(
-                flex: 2,
-                child: CardLeftSection(),
+              Text(
+                'Cards',
+                style: AppStyles.semi22(context),
               ),
-              const VerticalDivider(),
+              SizedBox(height: 12),
               Expanded(
-                flex: 1,
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.end,
-                  children: [
-                    Text.rich(
-                      TextSpan(
-                        children: [
-                          TextSpan(
-                            text: '\$',
-                            style: AppStyles.bold18(context),
-                          ),
-                          TextSpan(
-                            text: ' 2850.75',
-                            style: AppStyles.bold30(context),
-                          ),
-                        ],
-                      ),
+                child: Row(
+                  children: const [
+                    Expanded(
+                      flex: 3,
+                      child: CardLeftSection(),
                     ),
-                    Text(
-                      'Current balance',
-                      style: AppStyles.regular14(context),
-                    )
+                    VerticalDivider(
+                      width: 70,
+                      color: AppColors.greyE8,
+                    ),
+                    CardRightSection(),
                   ],
                 ),
               ),
-              const SizedBox(height: 40),
             ],
           ),
-        ],
+        ),
       ),
     );
   }

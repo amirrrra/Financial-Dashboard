@@ -16,7 +16,7 @@ class CardCloudcashWidget extends StatelessWidget {
         padding: const EdgeInsets.all(20),
         decoration: const BoxDecoration(
           gradient: LinearGradient(
-            begin: Alignment(0.00, -1.00),
+            begin: Alignment(0, -1),
             end: Alignment(0, 1),
             colors: [AppColors.blue, AppColors.blueSky],
           ),

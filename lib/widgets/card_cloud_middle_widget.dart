@@ -1,4 +1,4 @@
-import 'package:financial_dashboard/widgets/card_cloud_middle_item_widget.dart';
+import 'package:financial_dashboard/utils/app_styles.dart';
 import 'package:flutter/material.dart';
 
 class CardCloudMiddleWidget extends StatelessWidget {
@@ -6,16 +6,26 @@ class CardCloudMiddleWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Row(
+    return Row(
       children: [
-        CardCloudMiddleItemWidget(text: '5789'),
+        getCodeStyle(context, text: '5789'),
         SizedBox(width: 15),
-        CardCloudMiddleItemWidget(text: '* * * *'),
+        getCodeStyle(context, text: '* * * *'),
         SizedBox(width: 15),
-        CardCloudMiddleItemWidget(text: '* * * *'),
+        getCodeStyle(context, text: '* * * *'),
         SizedBox(width: 15),
-        CardCloudMiddleItemWidget(text: '2847'),
+        getCodeStyle(context, text: '2847'),
       ],
+    );
+  }
+
+  Text getCodeStyle(
+    BuildContext context, {
+    required String text,
+  }) {
+    return Text(
+      text,
+      style: AppStyles.quickMedium24(context),
     );
   }
 }

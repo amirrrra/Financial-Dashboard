@@ -17,13 +17,6 @@ abstract class AppStyles {
     );
   }
 
-  static TextStyle regular14(BuildContext context) {
-    return TextStyle(
-      fontSize: getResponsiveFontSize(context, 14),
-      color: AppColors.greyAe
-    );
-  }
-
   static TextStyle regular16(BuildContext context) {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, 16),
@@ -31,22 +24,23 @@ abstract class AppStyles {
     );
   }
 
-  static TextStyle regular20(BuildContext context) {
+  static TextStyle regular17(BuildContext context) {
     return TextStyle(
-      fontSize: getResponsiveFontSize(context, 20),
+      fontSize: getResponsiveFontSize(context, 17),
+      color: AppColors.greyAe,
     );
   }
 
-  static TextStyle semi14(BuildContext context) {
+  static TextStyle semi16(BuildContext context) {
     return TextStyle(
-      fontSize: getResponsiveFontSize(context, 14),
+      fontSize: getResponsiveFontSize(context, 16),
       fontWeight: FontWeight.w600,
     );
   }
 
-  static TextStyle semi20(BuildContext context) {
+  static TextStyle semi22(BuildContext context) {
     return TextStyle(
-      fontSize: getResponsiveFontSize(context, 20),
+      fontSize: getResponsiveFontSize(context, 22),
       fontWeight: FontWeight.w600,
     );
   }
@@ -82,17 +76,18 @@ abstract class AppStyles {
     );
   }
 
-  static TextStyle bold18(BuildContext context) {
+  static TextStyle semi30(BuildContext context) {
     return TextStyle(
-      fontSize: getResponsiveFontSize(context, 18),
-      fontWeight: FontWeight.bold,
+      fontSize: getResponsiveFontSize(context, 25),
+      fontWeight: FontWeight.w600,
       color: AppColors.blue,
     );
   }
-  static TextStyle bold30(BuildContext context) {
+
+  static TextStyle semi40(BuildContext context) {
     return TextStyle(
-      fontSize: getResponsiveFontSize(context, 30),
-      fontWeight: FontWeight.bold,
+      fontSize: getResponsiveFontSize(context, 40),
+      fontWeight: FontWeight.w600,
       color: AppColors.blue,
     );
   }
@@ -112,8 +107,6 @@ abstract class AppStyles {
       color: AppColors.greyC7,
     );
   }
-
-
 
   static TextStyle medium14(BuildContext context) {
     return TextStyle(

@@ -12,7 +12,6 @@ class CardLeftSection extends StatelessWidget {
         CardCloudcashWidget(),
         SizedBox(height: 30),
         CardChartWidget(),
-        SizedBox(height: 10),
       ],
     );
   }

@@ -16,15 +16,14 @@ class CardChartWidget extends StatelessWidget {
           children: [
             Text(
               'Weekly payment limit',
-              style: AppStyles.regular14(context),
+              style: AppStyles.regular16(context),
             ),
             Text(
               r'$350.60 / $4000',
-              style: AppStyles.semi14(context),
+              style: AppStyles.semi16(context),
             ),
-            SizedBox(height: 35,)
           ],
-        )
+        ),
       ],
     );
   }
@@ -32,6 +31,7 @@ class CardChartWidget extends StatelessWidget {
   LinearProgressIndicator getLinearIndicator() {
     return LinearProgressIndicator(
       minHeight: 10,
+      
       borderRadius: BorderRadius.circular(14),
       value: 1 / 5,
       backgroundColor: AppColors.greyF1,
