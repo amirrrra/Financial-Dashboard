@@ -16,7 +16,7 @@ class DrawerTrailingWidget extends StatelessWidget {
         const SizedBox(height: 8),
         Text(
           'Give your money\nawesome space in cloud',
-          style: AppStyles.gilroyRegular12(context),
+          style: AppStyles.regular12(context),
           textAlign: TextAlign.center,
         ),
         const SizedBox(height: 16),

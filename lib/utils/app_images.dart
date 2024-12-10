@@ -9,7 +9,7 @@ abstract class AppImages {
 
   static const cards = "assets/images/cards.svg";
 
-  static const cloudcard = "assets/images/cloudcard.svg";
+  static const cloudcard = "assets/images/cloudcard.png";
 
   static const cloudcash = "assets/images/cloudcash.svg";
 

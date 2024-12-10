@@ -1,5 +1,4 @@
-abstract class Constants {
-  static const lato = 'Lato';
+class Constants {
   static const quicksand = 'Quicksand';
   static const gilroy = 'Gilroy';
 }

@@ -4,132 +4,127 @@ import 'package:financial_dashboard/utils/size_config.dart';
 import 'package:flutter/material.dart';
 
 abstract class AppStyles {
-  static TextStyle gilroyRegular9(BuildContext context) {
+  static TextStyle regular9(BuildContext context) {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, 9),
+      color: AppColors.white,
     );
   }
 
-  static TextStyle gilroyRegular12(BuildContext context) {
+  static TextStyle regular12(BuildContext context) {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, 12),
     );
   }
 
-  static TextStyle gilroyRegular14(BuildContext context) {
+  static TextStyle regular14(BuildContext context) {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, 14),
     );
   }
 
-  static TextStyle gilroyRegular16(BuildContext context) {
+  static TextStyle regular16(BuildContext context) {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, 16),
       color: AppColors.greyAe,
     );
   }
 
-  static TextStyle gilroyRegular20(BuildContext context) {
+  static TextStyle regular20(BuildContext context) {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, 20),
     );
   }
 
-  static TextStyle gilroySemi14(BuildContext context) {
+  static TextStyle semi14(BuildContext context) {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, 14),
       fontWeight: FontWeight.w600,
     );
   }
 
-  static TextStyle gilroySemi20(BuildContext context) {
+  static TextStyle semi20(BuildContext context) {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, 20),
       fontWeight: FontWeight.w600,
     );
   }
 
-  static TextStyle gilroySemi44(BuildContext context) {
+  static TextStyle semi44(BuildContext context) {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, 44),
       fontWeight: FontWeight.w600,
     );
   }
 
-  static TextStyle latoBold14(BuildContext context) {
-    return TextStyle(
-      fontSize: getResponsiveFontSize(context, 14),
-      fontWeight: FontWeight.bold,
-      fontFamily: Constants.lato,
-      color: AppColors.greyC7,
-    );
-  }
-
-  static TextStyle latoBold8(BuildContext context) {
-    return TextStyle(
-      fontSize: getResponsiveFontSize(context, 8),
-      fontWeight: FontWeight.bold,
-      fontFamily: Constants.lato,
-      color: AppColors.white,
-    );
-  }
-
-  static TextStyle latoLight24(BuildContext context) {
-    return TextStyle(
-      fontSize: getResponsiveFontSize(context, 24),
-      fontWeight: FontWeight.w300,
-      fontFamily: Constants.lato,
-      color: AppColors.greyC7,
-    );
-  }
-
-  static TextStyle latoLight20(BuildContext context) {
-    return TextStyle(
-      fontSize: getResponsiveFontSize(context, 20),
-      fontWeight: FontWeight.w300,
-      fontFamily: Constants.lato,
-      color: AppColors.greyC7,
-    );
-  }
-
-  static TextStyle latoSemi24(BuildContext context) {
+  static TextStyle semi24(BuildContext context) {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, 24),
       fontWeight: FontWeight.w600,
-      fontFamily: Constants.lato,
       color: AppColors.grey69,
     );
   }
 
-  static TextStyle latoSemi14(BuildContext context) {
+  static TextStyle bold14(BuildContext context) {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, 14),
-      fontWeight: FontWeight.w600,
-      fontFamily: Constants.lato,
+      fontWeight: FontWeight.bold,
+      color: AppColors.greyC7,
     );
   }
 
-  static TextStyle latoMedium7(BuildContext context) {
-    return TextStyle(
-      fontSize: getResponsiveFontSize(context, 7),
-      fontWeight: FontWeight.w500,
-      fontFamily: Constants.lato,
-      color: AppColors.white,
-    );
-  }
-
-  static TextStyle latoMedium12(BuildContext context) {
+  static TextStyle bold12(BuildContext context) {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, 12),
-      fontWeight: FontWeight.w600,
-      fontFamily: Constants.gilroy,
+      fontWeight: FontWeight.bold,
+      color: AppColors.white.withOpacity(0.4),
+    );
+  }
+
+  static TextStyle bold18(BuildContext context) {
+    return TextStyle(
+      fontSize: getResponsiveFontSize(context, 18),
+      fontWeight: FontWeight.bold,
+      color: AppColors.blue,
+    );
+  }
+  static TextStyle bold30(BuildContext context) {
+    return TextStyle(
+      fontSize: getResponsiveFontSize(context, 30),
+      fontWeight: FontWeight.bold,
+      color: AppColors.blue,
+    );
+  }
+
+  static TextStyle light24(BuildContext context) {
+    return TextStyle(
+      fontSize: getResponsiveFontSize(context, 24),
+      fontWeight: FontWeight.w300,
+      color: AppColors.greyC7,
+    );
+  }
+
+  static TextStyle light20(BuildContext context) {
+    return TextStyle(
+      fontSize: getResponsiveFontSize(context, 20),
+      fontWeight: FontWeight.w300,
+      color: AppColors.greyC7,
+    );
+  }
+
+
+
+  static TextStyle medium14(BuildContext context) {
+    return TextStyle(
+      fontSize: getResponsiveFontSize(context, 14),
+      fontWeight: FontWeight.w500,
       color: AppColors.white,
     );
   }
 
-  static TextStyle quickMedium21(BuildContext context) {
+  static TextStyle quickMedium24(BuildContext context) {
     return TextStyle(
-      fontSize: getResponsiveFontSize(context, 21),
+      fontSize: getResponsiveFontSize(context, 24),
       fontWeight: FontWeight.w500,
       fontFamily: Constants.quicksand,
       color: AppColors.white,
@@ -140,14 +135,13 @@ abstract class AppStyles {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, 14),
       fontWeight: FontWeight.bold,
-      fontFamily: Constants.gilroy,
       color: AppColors.primaryColor,
     );
   }
 
-  static TextStyle quickBold16(BuildContext context) {
+  static TextStyle quickBold20(BuildContext context) {
     return TextStyle(
-      fontSize: getResponsiveFontSize(context, 16),
+      fontSize: getResponsiveFontSize(context, 20),
       fontWeight: FontWeight.bold,
       fontFamily: Constants.quicksand,
       color: AppColors.white,

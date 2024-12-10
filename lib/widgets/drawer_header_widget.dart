@@ -19,7 +19,7 @@ class DrawerHeaderWidget extends StatelessWidget {
         ),
         Text(
           'cloudcash',
-          style: AppStyles.quickBold16(context).copyWith(
+          style: AppStyles.quickBold20(context).copyWith(
             color: AppColors.blueDark,
           ),
         ),

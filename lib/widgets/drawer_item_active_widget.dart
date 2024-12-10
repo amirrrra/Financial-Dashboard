@@ -27,7 +27,7 @@ class DrawerItemActiveWidget extends StatelessWidget {
         ),
         title: Text(
           drawerModel.title,
-          style: AppStyles.latoBold14(context).copyWith(
+          style: AppStyles.bold14(context).copyWith(
             color: AppColors.blue,
           ),
         ),

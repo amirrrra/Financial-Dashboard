@@ -32,8 +32,14 @@ flutter:
     - family: Gilroy
       fonts:
         - asset: assets/fonts/Gilroy-Regular.ttf
+        - asset: assets/fonts/Gilroy-Light.ttf
+          weight: 300
+        - asset: assets/fonts/Gilroy-Medium.ttf
+          weight: 500
         - asset: assets/fonts/Gilroy-SemiBold.ttf
           weight: 600
+        - asset: assets/fonts/Gilroy-Bold.ttf
+          weight: 700
  
     - family: Quicksand
       fonts:
@@ -43,12 +49,7 @@ flutter:
         - asset: assets/fonts/Quicksand-Bold.ttf
           weight: 700
 
-    - family: Lato
-      fonts:
-        - asset: assets/fonts/Lato-Light.ttf
-          weight: 300
-        - asset: assets/fonts/Lato-Bold.ttf
-          weight: 700
+    
 
 flutter_assets:
   assets_path: assets/images

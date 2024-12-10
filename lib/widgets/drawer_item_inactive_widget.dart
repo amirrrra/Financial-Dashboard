@@ -15,7 +15,7 @@ class DrawerItemInactiveWidget extends StatelessWidget {
       ),
       title: Text(
         drawerModel.title,
-        style: AppStyles.latoBold14(context),
+        style: AppStyles.bold14(context),
       ),
     );
   }
