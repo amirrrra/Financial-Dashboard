@@ -1,5 +1,5 @@
 import 'package:financial_dashboard/utils/app_styles.dart';
-import 'package:financial_dashboard/widgets/card_cloudcash_widget.dart';
+import 'package:financial_dashboard/widgets/card_left_section.dart';
 import 'package:financial_dashboard/widgets/custom_container_widget.dart';
 import 'package:flutter/material.dart';
 
@@ -20,7 +20,7 @@ class CardWidget extends StatelessWidget {
             children: [
               const Expanded(
                 flex: 2,
-                child: CardCloudcashWidget(),
+                child: CardLeftSection(),
               ),
               const VerticalDivider(),
               Expanded(
