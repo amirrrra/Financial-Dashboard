@@ -30,6 +30,20 @@ abstract class AppStyles {
       color: AppColors.greyAe,
     );
   }
+  static TextStyle bold17(BuildContext context) {
+    return TextStyle(
+      fontSize: getResponsiveFontSize(context, 17),
+      color: AppColors.grey3F,
+      fontWeight: FontWeight.bold
+    );
+  }
+  static TextStyle semi17(BuildContext context) {
+    return TextStyle(
+      fontSize: getResponsiveFontSize(context, 17),
+      color: AppColors.grey3F,
+      fontWeight: FontWeight.w600
+    );
+  }
 
   static TextStyle semi16(BuildContext context) {
     return TextStyle(
@@ -113,6 +127,13 @@ abstract class AppStyles {
       fontSize: getResponsiveFontSize(context, 14),
       fontWeight: FontWeight.w500,
       color: AppColors.white,
+    );
+  }
+  static TextStyle medium16(BuildContext context) {
+    return TextStyle(
+      fontSize: getResponsiveFontSize(context, 16),
+      fontWeight: FontWeight.w500,
+      color: AppColors.grey3F,
     );
   }
 

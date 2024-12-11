@@ -15,7 +15,7 @@ abstract class AppImages {
 
   static const deacivateCard = "assets/images/deacivate_card.svg";
 
-  static const lectromenMarket = "assets/images/electromen_market..svg";
+  static const electromenMarket = "assets/images/electromen_market..svg";
 
   static const electronics = "assets/images/electronics.svg";
 

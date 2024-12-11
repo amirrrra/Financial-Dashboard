@@ -1,5 +1,6 @@
 import 'package:financial_dashboard/utils/app_styles.dart';
 import 'package:financial_dashboard/widgets/card_widget.dart';
+import 'package:financial_dashboard/widgets/transaction_widget.dart';
 import 'package:flutter/material.dart';
 
 class CardsAndTransactionsSection extends StatelessWidget {
@@ -21,7 +22,7 @@ class CardsAndTransactionsSection extends StatelessWidget {
         const SizedBox(height: 40),
         Expanded(child: CardWidget()),
         const SizedBox(height: 30),
-        Expanded(child: CardWidget()),
+        Expanded(child: TransactionWidget()),
 
 
       ],
