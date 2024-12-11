@@ -9,17 +9,17 @@ environment:
   sdk: ^3.5.4
 
 dependencies:
+  cupertino_icons: ^1.0.8
+  expandable_page_view: ^1.0.17
   flutter:
     sdk: flutter
   flutter_svg: ^2.0.14
-  
-  cupertino_icons: ^1.0.8
 
 dev_dependencies:
-  flutter_test:
-    sdk: flutter
 
   flutter_lints: ^4.0.0
+  flutter_test:
+    sdk: flutter
 
 flutter:
 
@@ -40,7 +40,7 @@ flutter:
           weight: 600
         - asset: assets/fonts/Gilroy-Bold.ttf
           weight: 700
- 
+
     - family: Quicksand
       fonts:
         - asset: assets/fonts/Quicksand-Regular.ttf
@@ -49,10 +49,8 @@ flutter:
         - asset: assets/fonts/Quicksand-Bold.ttf
           weight: 700
 
-    
-
 flutter_assets:
   assets_path: assets/images
   output_path: lib/utils
   filename: app_images.dart
-  field_prefix: 
+  field_prefix: null

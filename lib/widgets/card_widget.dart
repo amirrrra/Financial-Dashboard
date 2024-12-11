@@ -11,34 +11,37 @@ class CardWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CustomContainerWidget(
-      child: IntrinsicHeight(
-        child: Padding(
-          padding: const EdgeInsets.all(20),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                'Cards',
-                style: AppStyles.semi22(context),
-              ),
-              SizedBox(height: 12),
-              Expanded(
-                child: Row(
-                  children: const [
-                    Expanded(
-                      flex: 3,
-                      child: CardLeftSection(),
-                    ),
-                    VerticalDivider(
+      child: Padding(
+        padding: const EdgeInsets.all(20),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              'Cards',
+              style: AppStyles.semi22(context),
+            ),
+            const SizedBox(height: 12),
+            Expanded(
+              child: const Row(
+                children: [
+                  Expanded(
+                    flex: 3,
+                    child: CardLeftSection(),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.only(bottom: 72, top: 3), //chart height + 2
+                    child: VerticalDivider(
                       width: 70,
                       color: AppColors.greyE8,
                     ),
-                    CardRightSection(),
-                  ],
-                ),
+                  ),
+                  Expanded(
+                    child: CardRightSection(),
+                  ),
+                ],
               ),
-            ],
-          ),
+            ),
+          ],
         ),
       ),
     );

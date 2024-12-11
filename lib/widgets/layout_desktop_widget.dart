@@ -14,14 +14,35 @@ class LayoutDesktopWidget extends StatelessWidget {
           flex: 3,
           child: DrawerWidget(),
         ),
-        const Expanded(
-          flex: 7,
-          child:CardsAndTransactionsSection(),
+        // SizedBox(width: 45),
+         VerticalDivider(
+          color: AppColors.greyE8,
         ),
         Expanded(
-          flex: 6,
-          child: Container(
-            color: AppColors.blueDark,
+          flex: 13,
+          child: CustomScrollView(
+            slivers: [
+              SliverFillRemaining(
+                hasScrollBody: false,
+                child: Row(
+                  children: [
+                    const Expanded(
+                      flex: 7,
+                      child: Padding(
+                        padding: EdgeInsets.all(32),
+                        child: CardsAndTransactionsSection(),
+                      ),
+                    ),
+                    Expanded(
+                      flex: 6,
+                      child: Container(
+                        color: AppColors.blueDark,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ],
           ),
         ),
       ],

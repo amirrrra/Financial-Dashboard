@@ -18,11 +18,13 @@ abstract class AppColors {
   static var black6 = const Color(0xff000000).withOpacity(6);
   static const white = Color(0xffFFFFFF);
   static const green = Color(0xff22A447);
+  static const greenDark = Color.fromARGB(255, 3, 108, 33);
   static const orange = Color(0xffF8964C);
   static const blue = Color(0xff197BBD);
   static const blueSky = Color(0xFF3391D0);
   static const yellow = Color(0xffFFC145);
   static const red = Color(0xffBB4430);
+  static const redDark = Color.fromARGB(255, 134, 31, 12);
   static const blueLight = Color(0xff70A6E8);
   static const blueDark = Color(0xff0F4264);
   static const greenLight = Color(0xff439A86);

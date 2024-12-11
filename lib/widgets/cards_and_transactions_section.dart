@@ -10,7 +10,6 @@ class CardsAndTransactionsSection extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        SizedBox(height: 35,),
         Text(
           'Weekly sumup',
           style: AppStyles.semi44(context),
@@ -20,7 +19,10 @@ class CardsAndTransactionsSection extends StatelessWidget {
           style: AppStyles.regular16(context),
         ),
         const SizedBox(height: 40),
-        CardWidget(),
+        Expanded(child: CardWidget()),
+        const SizedBox(height: 30),
+        Expanded(child: CardWidget()),
+
 
       ],
     );

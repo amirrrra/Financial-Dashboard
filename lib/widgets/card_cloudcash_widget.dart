@@ -1,4 +1,3 @@
-import 'package:financial_dashboard/utils/app_colors.dart';
 import 'package:financial_dashboard/utils/app_images.dart';
 import 'package:financial_dashboard/widgets/card_cloud_leading_widget.dart';
 import 'package:financial_dashboard/widgets/card_cloud_middle_widget.dart';
@@ -6,7 +5,13 @@ import 'package:financial_dashboard/widgets/card_cloud_trailing_widget.dart';
 import 'package:flutter/material.dart';
 
 class CardCloudcashWidget extends StatelessWidget {
-  const CardCloudcashWidget({super.key});
+  final Color colorDark;
+  final Color colorLight;
+  const CardCloudcashWidget({
+    super.key,
+    required this.colorDark,
+    required this.colorLight,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -14,11 +19,11 @@ class CardCloudcashWidget extends StatelessWidget {
       aspectRatio: 320 / 206,
       child: Container(
         padding: const EdgeInsets.all(20),
-        decoration: const BoxDecoration(
+        decoration: BoxDecoration(
           gradient: LinearGradient(
             begin: Alignment(0, -1),
             end: Alignment(0, 1),
-            colors: [AppColors.blue, AppColors.blueSky],
+            colors: [colorDark, colorLight],
           ),
           image: DecorationImage(
             image: AssetImage(AppImages.cloudcard),
