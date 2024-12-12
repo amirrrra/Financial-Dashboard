@@ -15,11 +15,11 @@ class DrawerWidget extends StatelessWidget {
           SliverToBoxAdapter(
             child: Column(
               children: [
-                SizedBox(height: 20),
+                SizedBox(height: 40),
                 DrawerHeaderWidget(),
-                SizedBox(height: 28),
+                SizedBox(height: 56),
                 DrawerBodyWidget(),
-                SizedBox(height: 28),
+                SizedBox(height: 56),
               ],
             ),
           ),

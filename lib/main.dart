@@ -22,6 +22,7 @@ class FinancialDashboard extends StatelessWidget {
           ),
         ),
       ),
+      debugShowCheckedModeBanner: false,
     );
   }
 }

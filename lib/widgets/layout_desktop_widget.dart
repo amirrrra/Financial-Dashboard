@@ -1,6 +1,7 @@
 import 'package:financial_dashboard/utils/app_colors.dart';
 import 'package:financial_dashboard/widgets/cards_and_transactions_section.dart';
 import 'package:financial_dashboard/widgets/drawer_widget.dart';
+import 'package:financial_dashboard/widgets/header_widget.dart';
 import 'package:flutter/material.dart';
 
 class LayoutDesktopWidget extends StatelessWidget {
@@ -10,12 +11,12 @@ class LayoutDesktopWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
+        // Drawwer
         const Expanded(
           flex: 3,
           child: DrawerWidget(),
         ),
-        // SizedBox(width: 45),
-         VerticalDivider(
+        VerticalDivider(
           color: AppColors.greyE8,
         ),
         Expanded(
@@ -24,22 +25,35 @@ class LayoutDesktopWidget extends StatelessWidget {
             slivers: [
               SliverFillRemaining(
                 hasScrollBody: false,
-                child: Row(
-                  children: [
-                    const Expanded(
-                      flex: 7,
-                      child: Padding(
-                        padding: EdgeInsets.all(32),
-                        child: CardsAndTransactionsSection(),
+                child: Padding(
+                  padding: EdgeInsets.all(32),
+                  child: Column(
+                    children: [
+                      // Header
+                      HeaderWidget(),
+                      SizedBox(height: 40),
+                      // 2 sections
+                      Expanded(
+                        child: Row(
+                          children: [
+                            // Cards And Transactions Section
+                            const Expanded(
+                              flex: 7,
+                              child: CardsAndTransactionsSection(),
+                            ),
+                            SizedBox(width: 24),
+                            // Goals, Outcome And New Transactions Section
+                            Expanded(
+                              flex: 6,
+                              child: Container(
+                                color: AppColors.blueDark,
+                              ),
+                            ),
+                          ],
+                        ),
                       ),
-                    ),
-                    Expanded(
-                      flex: 6,
-                      child: Container(
-                        color: AppColors.blueDark,
-                      ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
               ),
             ],
