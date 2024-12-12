@@ -12,8 +12,6 @@ class CustomContainerWidget extends StatelessWidget {
         boxShadow: shadows,
         borderRadius: BorderRadius.all(Radius.circular(28)),
         gradient: const LinearGradient(
-          begin: Alignment(0, -1),
-          end: Alignment(0, 1),
           colors: [AppColors.white, AppColors.white],
         ),
       ),
@@ -29,13 +27,13 @@ class CustomContainerWidget extends StatelessWidget {
         ),
         BoxShadow(
           color: AppColors.blackA,
-          blurRadius: 6,
+          blurRadius: 2,
           offset: Offset(0, 2),
         ),
         BoxShadow(
           color: AppColors.blackF,
-          blurRadius: 24,
-          offset: Offset(0, 16),
+          blurRadius: 4,
+          offset: Offset(0, 4),
         ),
       ];
 }
