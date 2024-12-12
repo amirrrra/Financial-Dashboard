@@ -1,11 +1,12 @@
-import 'package:financial_dashboard/utils/app_images.dart';
+import 'package:financial_dashboard/models/goals_model.dart';
 import 'package:financial_dashboard/utils/app_styles.dart';
 import 'package:financial_dashboard/widgets/custom_container_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
 class GoalsItemWidget extends StatelessWidget {
-  const GoalsItemWidget({super.key});
+  final GoalsModel goalsModel;
+  const GoalsItemWidget({super.key, required this.goalsModel});
 
   @override
   Widget build(BuildContext context) {
@@ -19,11 +20,11 @@ class GoalsItemWidget extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  '\$550',
+                  '\$${goalsModel.amount}',
                   style: AppStyles.semi24(context),
                 ),
                 Text(
-                  '12/20/20',
+                  goalsModel.date,
                   style: AppStyles.regular14(context),
                 ),
               ],
@@ -32,9 +33,9 @@ class GoalsItemWidget extends StatelessWidget {
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                SvgPicture.asset(AppImages.holidays),
+                SvgPicture.asset(goalsModel.image),
                 Text(
-                  'Holidays',
+                  goalsModel.title,
                   style: AppStyles.regular20(context),
                 )
               ],
