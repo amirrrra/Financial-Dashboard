@@ -1,6 +1,7 @@
 import 'package:financial_dashboard/utils/app_colors.dart';
 import 'package:financial_dashboard/widgets/cards_and_transactions_section.dart';
 import 'package:financial_dashboard/widgets/drawer_widget.dart';
+import 'package:financial_dashboard/widgets/goals_widget.dart';
 import 'package:financial_dashboard/widgets/header_widget.dart';
 import 'package:flutter/material.dart';
 
@@ -10,9 +11,9 @@ class LayoutDesktopWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
-      children: [
+      children: const [
         // Drawwer
-        const Expanded(
+        Expanded(
           flex: 3,
           child: DrawerWidget(),
         ),
@@ -37,7 +38,7 @@ class LayoutDesktopWidget extends StatelessWidget {
                         child: Row(
                           children: [
                             // Cards And Transactions Section
-                            const Expanded(
+                            Expanded(
                               flex: 7,
                               child: CardsAndTransactionsSection(),
                             ),
@@ -45,9 +46,7 @@ class LayoutDesktopWidget extends StatelessWidget {
                             // Goals, Outcome And New Transactions Section
                             Expanded(
                               flex: 6,
-                              child: Container(
-                                color: AppColors.blueDark,
-                              ),
+                              child: GoalsWidget(),
                             ),
                           ],
                         ),

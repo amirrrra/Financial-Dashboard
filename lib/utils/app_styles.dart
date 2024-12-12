@@ -17,6 +17,12 @@ abstract class AppStyles {
     );
   }
 
+  static TextStyle regular14(BuildContext context) {
+    return TextStyle(
+      fontSize: getResponsiveFontSize(context, 14),
+      color: AppColors.greyAe,
+    );
+  }
   static TextStyle regular16(BuildContext context) {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, 16),
@@ -28,6 +34,12 @@ abstract class AppStyles {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, 17),
       color: AppColors.greyAe,
+    );
+  }
+  static TextStyle regular20(BuildContext context) {
+    return TextStyle(
+      fontSize: getResponsiveFontSize(context, 20),
+      color: AppColors.grey3F,
     );
   }
   static TextStyle bold17(BuildContext context) {
