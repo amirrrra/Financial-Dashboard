@@ -1,7 +1,7 @@
 import 'package:financial_dashboard/utils/app_colors.dart';
 import 'package:financial_dashboard/widgets/cards_and_transactions_section.dart';
 import 'package:financial_dashboard/widgets/drawer_widget.dart';
-import 'package:financial_dashboard/widgets/goals_widget.dart';
+import 'package:financial_dashboard/widgets/goals_outcome_and_transaction_section.dart';
 import 'package:financial_dashboard/widgets/header_widget.dart';
 import 'package:flutter/material.dart';
 
@@ -46,7 +46,7 @@ class LayoutDesktopWidget extends StatelessWidget {
                             // Goals, Outcome And New Transactions Section
                             Expanded(
                               flex: 6,
-                              child: GoalsWidget(),
+                              child: GoalsOutcomeAndTransactionSection(),
                             ),
                           ],
                         ),

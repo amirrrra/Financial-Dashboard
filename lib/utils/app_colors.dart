@@ -31,4 +31,7 @@ abstract class AppColors {
   static const blueDark = Color(0xff0F4264);
   static const greenLight = Color(0xff439A86);
   static const iceF = Color(0xffF0F7FF);
+  static const orangeSoft = Color(0xFFFFE9D9);
+  static const greenSoft = Color(0xFFDDF9E4);
+  static const blueSoft = Color(0xFFE4F0FF);
 }

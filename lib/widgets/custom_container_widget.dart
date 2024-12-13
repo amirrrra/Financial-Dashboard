@@ -1,4 +1,5 @@
 import 'package:financial_dashboard/utils/app_colors.dart';
+import 'package:financial_dashboard/utils/constants.dart';
 import 'package:flutter/material.dart';
 
 class CustomContainerWidget extends StatelessWidget {
@@ -9,7 +10,7 @@ class CustomContainerWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        boxShadow: shadows,
+        boxShadow: Constants.shadows,
         borderRadius: BorderRadius.all(Radius.circular(28)),
         gradient: const LinearGradient(
           colors: [AppColors.white, AppColors.white],
@@ -18,22 +19,4 @@ class CustomContainerWidget extends StatelessWidget {
       child: child,
     );
   }
-
-  List<BoxShadow> get shadows => const [
-        BoxShadow(
-          color: AppColors.blackA,
-          blurRadius: 1,
-          offset: Offset(0, 0),
-        ),
-        BoxShadow(
-          color: AppColors.blackA,
-          blurRadius: 2,
-          offset: Offset(0, 2),
-        ),
-        BoxShadow(
-          color: AppColors.blackF,
-          blurRadius: 4,
-          offset: Offset(0, 4),
-        ),
-      ];
 }
