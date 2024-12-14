@@ -1,6 +1,6 @@
-import 'package:financial_dashboard/utils/app_colors.dart';
-import 'package:financial_dashboard/utils/app_images.dart';
 import 'package:financial_dashboard/utils/app_styles.dart';
+import 'package:financial_dashboard/widgets/custom_container_widget.dart';
+import 'package:financial_dashboard/widgets/new_transaction_items_list_widget.dart';
 import 'package:flutter/material.dart';
 
 class NewTransactionWidget extends StatelessWidget {
@@ -8,32 +8,21 @@ class NewTransactionWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Text(
-          'Outcome Statistics',
-          style: AppStyles.semi22(context),
-        ),
-        SizedBox(height: 15),
-        Row(
+    return CustomContainerWidget(
+      child: Padding(
+        padding: const EdgeInsets.all(20),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Column(
-              children: [
-                CircleAvatar(
-                  backgroundImage: AssetImage(AppImages.user1),
-                ),
-                Text(
-                  'Ann',
-                  style: AppStyles.regular12(context).copyWith(
-                    color: AppColors.grey3F,
-                  ),
-                )
-              ],
-            )
+            Text(
+              'New Transaction',
+              style: AppStyles.semi22(context),
+            ),
+            SizedBox(height: 15),
+            NewTransactionItemsListWidget()
           ],
-        )
-      ],
+        ),
+      ),
     );
   }
 }
