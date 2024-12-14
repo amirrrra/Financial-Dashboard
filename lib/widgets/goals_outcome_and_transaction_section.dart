@@ -1,4 +1,5 @@
 import 'package:financial_dashboard/widgets/goals_widget.dart';
+import 'package:financial_dashboard/widgets/new_transaction_widget.dart';
 import 'package:financial_dashboard/widgets/outcome_widget.dart';
 import 'package:flutter/material.dart';
 
@@ -10,10 +11,9 @@ class GoalsOutcomeAndTransactionSection extends StatelessWidget {
     return const Column(
       children: [
         GoalsWidget(),
-        Expanded(child: OutcomeWidget())
-        // Flexible(child: OutcomeWidget()),
-        // Flexible(child: OutcomeWidget()),
-        // Flexible(child: OutcomeWidget()),
+        Expanded(child: OutcomeWidget()),
+        // SizedBox(height: 25),
+        Expanded(child: NewTransactionWidget()),
       ],
     );
   }

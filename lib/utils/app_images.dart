@@ -58,4 +58,13 @@ abstract class AppImages {
   static const user = "assets/images/user.svg";
 
   static const xbox = "assets/images/xbox.svg";
+
+  static const user1 = "assets/images/user1.jpg";
+  static const user2 = "assets/images/user2.jpg";
+  static const user3 = "assets/images/user3.jpeg";
+  static const user4 = "assets/images/user4.jpg";
+  static const user5 = "assets/images/user5.jpg";
+  static const user6 = "assets/images/user6.jpeg";
+  static const user7 = "assets/images/user7.jpg";
+  static const user8 = "assets/images/user8.jpeg";
 }
