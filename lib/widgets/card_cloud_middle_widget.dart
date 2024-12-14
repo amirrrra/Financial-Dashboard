@@ -6,26 +6,33 @@ class CardCloudMiddleWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: [
-        getCodeStyle(context, text: '5789'),
-        SizedBox(width: 15),
-        getCodeStyle(context, text: '* * * *'),
-        SizedBox(width: 15),
-        getCodeStyle(context, text: '* * * *'),
-        SizedBox(width: 15),
-        getCodeStyle(context, text: '2847'),
-      ],
+    return FittedBox(
+      fit: BoxFit.scaleDown,
+      child: Text(
+        '5789''    ''* * * *''    ''* * * *''    ''2847',
+        style: AppStyles.quickMedium20(context),
+      ),
     );
+    // return Row(
+    //   children: [
+    //     getCodeStyle(context, text: '5789'),
+    //     SizedBox(width: 15),
+    //     getCodeStyle(context, text: '* * * *'),
+    //     SizedBox(width: 15),
+    //     getCodeStyle(context, text: '* * * *'),
+    //     SizedBox(width: 15),
+    //     getCodeStyle(context, text: '2847'),
+    //   ],
+    // );
   }
 
-  Text getCodeStyle(
-    BuildContext context, {
-    required String text,
-  }) {
-    return Text(
-      text,
-      style: AppStyles.quickMedium24(context),
-    );
-  }
+  // Text getCodeStyle(
+  //   BuildContext context, {
+  //   required String text,
+  // }) {
+  //   return Text(
+  //     text,
+  //     style: AppStyles.quickMedium24(context),
+  //   );
+  // }
 }

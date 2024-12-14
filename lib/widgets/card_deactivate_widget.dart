@@ -17,7 +17,7 @@ class CardDeactivateWidget extends StatelessWidget {
         SizedBox(height: 10),
         Text(
           'Deacivate card',
-          style: AppStyles.regular17(context),
+          style: AppStyles.regular16(context),
         ),
       ],
     );

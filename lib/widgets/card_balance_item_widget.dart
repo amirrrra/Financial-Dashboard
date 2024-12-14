@@ -38,7 +38,7 @@ class CardBalanceItemWidget extends StatelessWidget {
         ),
         Text(
           balance,
-          style: AppStyles.regular17(context),
+          style: AppStyles.regular16(context),
         )
       ],
     );

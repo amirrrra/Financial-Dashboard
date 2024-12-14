@@ -14,6 +14,7 @@ abstract class AppStyles {
   static TextStyle regular12(BuildContext context) {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, 12),
+      color: AppColors.grey3F,
     );
   }
 
@@ -23,6 +24,7 @@ abstract class AppStyles {
       color: AppColors.greyAe,
     );
   }
+
   static TextStyle regular16(BuildContext context) {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, 16),
@@ -30,30 +32,26 @@ abstract class AppStyles {
     );
   }
 
-  static TextStyle regular17(BuildContext context) {
-    return TextStyle(
-      fontSize: getResponsiveFontSize(context, 17),
-      color: AppColors.greyAe,
-    );
-  }
   static TextStyle regular20(BuildContext context) {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, 20),
       color: AppColors.grey3F,
     );
   }
-  static TextStyle bold17(BuildContext context) {
+
+  static TextStyle medium14(BuildContext context) {
     return TextStyle(
-      fontSize: getResponsiveFontSize(context, 17),
-      color: AppColors.grey3F,
-      fontWeight: FontWeight.bold
+      fontSize: getResponsiveFontSize(context, 14),
+      fontWeight: FontWeight.w500,
+      color: AppColors.white,
     );
   }
-  static TextStyle semi17(BuildContext context) {
+
+  static TextStyle medium16(BuildContext context) {
     return TextStyle(
-      fontSize: getResponsiveFontSize(context, 17),
+      fontSize: getResponsiveFontSize(context, 16),
+      fontWeight: FontWeight.w500,
       color: AppColors.grey3F,
-      fontWeight: FontWeight.w600
     );
   }
 
@@ -61,6 +59,7 @@ abstract class AppStyles {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, 16),
       fontWeight: FontWeight.w600,
+      color: AppColors.grey3F,
     );
   }
 
@@ -71,34 +70,11 @@ abstract class AppStyles {
     );
   }
 
-  static TextStyle semi44(BuildContext context) {
-    return TextStyle(
-      fontSize: getResponsiveFontSize(context, 44),
-      fontWeight: FontWeight.w600,
-    );
-  }
-
   static TextStyle semi24(BuildContext context) {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, 24),
       fontWeight: FontWeight.w600,
       color: AppColors.grey69,
-    );
-  }
-
-  static TextStyle bold14(BuildContext context) {
-    return TextStyle(
-      fontSize: getResponsiveFontSize(context, 14),
-      fontWeight: FontWeight.bold,
-      color: AppColors.greyC7,
-    );
-  }
-
-  static TextStyle bold12(BuildContext context) {
-    return TextStyle(
-      fontSize: getResponsiveFontSize(context, 12),
-      fontWeight: FontWeight.bold,
-      color: AppColors.white.withOpacity(0.4),
     );
   }
 
@@ -118,6 +94,29 @@ abstract class AppStyles {
     );
   }
 
+  static TextStyle semi44(BuildContext context) {
+    return TextStyle(
+      fontSize: getResponsiveFontSize(context, 44),
+      fontWeight: FontWeight.w600,
+    );
+  }
+
+  static TextStyle bold12(BuildContext context) {
+    return TextStyle(
+      fontSize: getResponsiveFontSize(context, 12),
+      fontWeight: FontWeight.bold,
+      color: AppColors.white.withOpacity(0.4),
+    );
+  }
+
+  static TextStyle bold14(BuildContext context) {
+    return TextStyle(
+      fontSize: getResponsiveFontSize(context, 14),
+      fontWeight: FontWeight.bold,
+      color: AppColors.greyC7,
+    );
+  }
+
   static TextStyle light24(BuildContext context) {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, 24),
@@ -126,43 +125,12 @@ abstract class AppStyles {
     );
   }
 
-  static TextStyle light20(BuildContext context) {
+  static TextStyle quickMedium20(BuildContext context) {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, 20),
-      fontWeight: FontWeight.w300,
-      color: AppColors.greyC7,
-    );
-  }
-
-  static TextStyle medium14(BuildContext context) {
-    return TextStyle(
-      fontSize: getResponsiveFontSize(context, 14),
-      fontWeight: FontWeight.w500,
-      color: AppColors.white,
-    );
-  }
-  static TextStyle medium16(BuildContext context) {
-    return TextStyle(
-      fontSize: getResponsiveFontSize(context, 16),
-      fontWeight: FontWeight.w500,
-      color: AppColors.grey3F,
-    );
-  }
-
-  static TextStyle quickMedium24(BuildContext context) {
-    return TextStyle(
-      fontSize: getResponsiveFontSize(context, 24),
       fontWeight: FontWeight.w500,
       fontFamily: Constants.quicksand,
       color: AppColors.white,
-    );
-  }
-
-  static TextStyle quickBold14(BuildContext context) {
-    return TextStyle(
-      fontSize: getResponsiveFontSize(context, 14),
-      fontWeight: FontWeight.bold,
-      color: AppColors.primaryColor,
     );
   }
 

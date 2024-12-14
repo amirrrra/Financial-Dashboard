@@ -22,7 +22,9 @@ class CardChartWidget extends StatelessWidget {
             ),
             Text(
               r'$350.60 / $4000',
-              style: AppStyles.semi16(context),
+              style: AppStyles.semi16(context).copyWith(
+                color: AppColors.primaryColor,
+              ),
             ),
           ],
         ),
