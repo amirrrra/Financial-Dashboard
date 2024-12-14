@@ -15,7 +15,7 @@ class OutcomeWidget extends StatelessWidget {
           style: AppStyles.semi22(context),
         ),
         const SizedBox(height: 12),
-        Expanded(child: OutcomeItemsListWidget()),
+        OutcomeItemsListWidget(),
       ],
     );
   }

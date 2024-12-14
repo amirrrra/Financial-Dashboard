@@ -11,12 +11,10 @@ class OutcomeItemsListWidget extends StatelessWidget {
       children: List.generate(
         3,
         (index) {
-          return Flexible(
-            child: Padding(
-              padding: const EdgeInsets.only(bottom: 20),
-              child: OutcomeItemWidget(
-                outcomeModel: OutcomeModel.outcomeList[index],
-              ),
+          return Padding(
+            padding: const EdgeInsets.only(bottom: 20),
+            child: OutcomeItemWidget(
+              outcomeModel: OutcomeModel.outcomeList[index],
             ),
           );
         },

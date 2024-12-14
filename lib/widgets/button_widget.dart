@@ -6,23 +6,28 @@ import 'package:flutter_svg/svg.dart';
 class ButtonWidget extends StatelessWidget {
   final String text;
   final String icon;
-  final double padding;
+  final double horizontalPadding;
+  final double verticalPadding;
   const ButtonWidget({
     super.key,
     required this.text,
     required this.icon,
-    required this.padding,
+    required this.horizontalPadding,
+    required this.verticalPadding,
   });
 
   @override
   Widget build(BuildContext context) {
     return TextButton(
       style: TextButton.styleFrom(
-        padding:  EdgeInsets.all(padding),
+        padding: EdgeInsets.symmetric(
+          horizontal: horizontalPadding,
+          vertical: verticalPadding,
+        ),
         backgroundColor: AppColors.yellow,
         shape: const RoundedRectangleBorder(
           borderRadius: BorderRadius.all(
-            Radius.circular(14),
+            Radius.circular(13),
           ),
         ),
       ),
@@ -30,9 +35,14 @@ class ButtonWidget extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Text(
-            text,
-            style: AppStyles.quickBold14(context),
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Text(
+              text,
+              style: AppStyles.bold14(context).copyWith(
+                color: AppColors.grey3F,
+              ),
+            ),
           ),
           SvgPicture.asset(icon)
         ],

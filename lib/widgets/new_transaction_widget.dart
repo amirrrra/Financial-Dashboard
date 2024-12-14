@@ -1,4 +1,6 @@
+import 'package:financial_dashboard/utils/app_images.dart';
 import 'package:financial_dashboard/utils/app_styles.dart';
+import 'package:financial_dashboard/widgets/button_widget.dart';
 import 'package:financial_dashboard/widgets/custom_container_widget.dart';
 import 'package:financial_dashboard/widgets/new_transaction_items_list_widget.dart';
 import 'package:financial_dashboard/widgets/new_transaction_textfield_widget.dart';
@@ -19,10 +21,27 @@ class NewTransactionWidget extends StatelessWidget {
               'New Transaction',
               style: AppStyles.semi22(context),
             ),
-            SizedBox(height: 15),
-            NewTransactionItemsListWidget(),
-            SizedBox(height: 15),
-            NewTransactionTextfieldWidget()
+            const SizedBox(height: 15),
+            const NewTransactionItemsListWidget(),
+            const SizedBox(height: 15),
+            const Row(
+              children: [
+                Expanded(
+                  flex: 3,
+                  child: NewTransactionTextfieldWidget(),
+                ),
+                SizedBox(width: 10),
+                Expanded(
+                  flex: 2,
+                  child: ButtonWidget(
+                    text: 'Send Transfer',
+                    icon: AppImages.send,
+                    horizontalPadding: 14,
+                    verticalPadding: 18,
+                  ),
+                ),
+              ],
+            ),
           ],
         ),
       ),
