@@ -1,7 +1,5 @@
-import 'package:financial_dashboard/utils/app_colors.dart';
-import 'package:financial_dashboard/utils/app_images.dart';
 import 'package:financial_dashboard/utils/app_styles.dart';
-import 'package:financial_dashboard/widgets/outcome_icon_widget.dart';
+import 'package:financial_dashboard/widgets/outcome_items_list_widget.dart';
 import 'package:flutter/material.dart';
 
 class OutcomeWidget extends StatelessWidget {
@@ -9,44 +7,15 @@ class OutcomeWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        OutcomeIconWidget(
-          color: AppColors.orangeSoft,
-          icon: AppImages.shoppping,
+        Text(
+          'Outcome Statistics',
+          style: AppStyles.semi22(context),
         ),
-        SizedBox(width: 15),
-        Flexible(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              Flexible(
-                child: Row(
-                  children: [
-                    Expanded(
-                      child: LinearProgressIndicator(
-                        color: AppColors.orange,
-                        minHeight: 10,
-                        value: 1 / 2,
-                        borderRadius: BorderRadius.all(Radius.circular(14)),
-                      ),
-                    ),
-                    SizedBox(width: 15),
-                    Text(
-                      '52%',
-                      style: AppStyles.semi24(context),
-                    ),
-                  ],
-                ),
-              ),
-              Text(
-                'Shoppping',
-                style: AppStyles.regular14(context),
-              )
-            ],
-          ),
-        ),
+        const SizedBox(height: 12),
+        Expanded(child: OutcomeItemsListWidget()),
       ],
     );
   }

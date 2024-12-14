@@ -1,11 +1,12 @@
+import 'package:financial_dashboard/models/outcome_model.dart';
 import 'package:financial_dashboard/utils/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
 class OutcomeIconWidget extends StatelessWidget {
-  final Color color;
-  final String icon;
-  const OutcomeIconWidget({super.key, required this.color, required this.icon});
+    final OutcomeModel outcomeModel;
+
+  const OutcomeIconWidget({super.key, required this.outcomeModel, });
 
   @override
   Widget build(BuildContext context) {
@@ -13,14 +14,14 @@ class OutcomeIconWidget extends StatelessWidget {
       width: 42,
       height: 42,
       decoration: BoxDecoration(
-        color: color,
+        color: outcomeModel.iconColor,
         boxShadow: Constants.shadows,
         borderRadius: BorderRadius.all(
           Radius.circular(3),
         ),
       ),
       child: SvgPicture.asset(
-        icon,
+        outcomeModel.icon,
         fit: BoxFit.scaleDown,
       ),
     );

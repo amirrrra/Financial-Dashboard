@@ -9,10 +9,11 @@ class GoalsOutcomeAndTransactionSection extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Column(
       children: [
-        Expanded(child: GoalsWidget()),
-        Flexible(child: OutcomeWidget()),
-        Flexible(child: OutcomeWidget()),
-        Flexible(child: OutcomeWidget()),
+        GoalsWidget(),
+        Expanded(child: OutcomeWidget())
+        // Flexible(child: OutcomeWidget()),
+        // Flexible(child: OutcomeWidget()),
+        // Flexible(child: OutcomeWidget()),
       ],
     );
   }
