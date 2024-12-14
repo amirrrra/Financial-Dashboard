@@ -10,25 +10,28 @@ class NewTransactionItemsListWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: [
-        Row(
-          children: List.generate(
-            8,
-            (index) {
-              return Row(
-                children: [
-                  NewTransactionItemWidget(
-                    newTransactionModel: NewTransactionModel.usersList[index],
-                  ),
-                  SizedBox(width: 12)
-                ],
-              );
-            },
+    return SingleChildScrollView(
+      scrollDirection: Axis.horizontal,
+      child: Row(
+        children: [
+          Row(
+            children: List.generate(
+              8,
+              (index) {
+                return Row(
+                  children: [
+                    NewTransactionItemWidget(
+                      newTransactionModel: NewTransactionModel.usersList[index],
+                    ),
+                    SizedBox(width: 12)
+                  ],
+                );
+              },
+            ),
           ),
-        ),
-        NewTransactionAddWidget(),
-      ],
+          NewTransactionAddWidget(),
+        ],
+      ),
     );
   }
 }

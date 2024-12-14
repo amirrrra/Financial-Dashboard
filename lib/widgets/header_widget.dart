@@ -1,4 +1,3 @@
-import 'package:financial_dashboard/utils/app_colors.dart';
 import 'package:financial_dashboard/utils/app_images.dart';
 import 'package:financial_dashboard/utils/app_styles.dart';
 import 'package:flutter/material.dart';
@@ -25,7 +24,7 @@ class HeaderWidget extends StatelessWidget {
             ),
           ],
         ),
-        
+
         // Right side content
         Row(
           children: [
@@ -33,7 +32,7 @@ class HeaderWidget extends StatelessWidget {
             const SizedBox(width: 16), // Add some spacing between icons
             SvgPicture.asset(AppImages.bell),
             const SizedBox(width: 16), // Add some spacing before profile
-            
+
             // Profile section
             Row(
               children: [
@@ -44,9 +43,7 @@ class HeaderWidget extends StatelessWidget {
                   children: [
                     Text(
                       'Omar',
-                      style: AppStyles.semi16(context).copyWith(
-                        color: AppColors.grey3F,
-                      ),
+                      style: AppStyles.semi16(context),
                     ),
                     Text(
                       'Admin account',

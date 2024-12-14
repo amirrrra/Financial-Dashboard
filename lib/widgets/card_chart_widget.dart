@@ -18,13 +18,11 @@ class CardChartWidget extends StatelessWidget {
           children: [
             Text(
               'Weekly payment limit',
-              style: AppStyles.regular16(context),
+              style: AppStyles.regular14(context),
             ),
             Text(
               r'$350.60 / $4000',
-              style: AppStyles.semi16(context).copyWith(
-                color: AppColors.primaryColor,
-              ),
+              style: AppStyles.semi14(context),
             ),
           ],
         ),

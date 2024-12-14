@@ -57,9 +57,16 @@ abstract class AppStyles {
 
   static TextStyle semi16(BuildContext context) {
     return TextStyle(
-      fontSize: getResponsiveFontSize(context, 16),
+      fontSize: getResponsiveFontSize(context, 14),
       fontWeight: FontWeight.w600,
       color: AppColors.grey3F,
+    );
+  }
+  static TextStyle semi14(BuildContext context) {
+    return TextStyle(
+      fontSize: getResponsiveFontSize(context, 14),
+      fontWeight: FontWeight.w600,
+      color: AppColors.primaryColor,
     );
   }
 

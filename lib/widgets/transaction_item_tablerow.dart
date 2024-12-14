@@ -35,7 +35,7 @@ class TransactionItemTablerow {
         ),
         Text(
           transactionModel.amount,
-          style: AppStyles.semi16(context).copyWith(color: AppColors.grey3F),
+          style: AppStyles.semi16(context),
         ),
       ],
     );
