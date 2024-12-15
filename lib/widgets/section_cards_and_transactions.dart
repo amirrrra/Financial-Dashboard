@@ -7,10 +7,9 @@ class SectionCardsAndTransactions extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: const [
-        Expanded(child: CardWidget()),
+    return const Column(
+      children:  [
+        CardWidget(),
         SizedBox(height: 30),
         TransactionWidget(),
       ],

@@ -14,10 +14,12 @@ class CardDeactivateWidget extends StatelessWidget {
         SvgPicture.asset(
           AppImages.deacivateCard,
         ),
-        SizedBox(height: 10),
-        Text(
-          'Deacivate card',
-          style: AppStyles.regular16(context),
+        SizedBox(height: 6),
+        FittedBox(
+          child: Text(
+            'Deacivate card',
+            style: AppStyles.regular16(context),
+          ),
         ),
       ],
     );

@@ -20,11 +20,11 @@ class _GoalsWidgetState extends State<GoalsWidget> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const SizedBox(height: 20),
         Text(
           'Goals',
           style: AppStyles.semi22(context),
         ),
+        const SizedBox(height: 12),
         Row(
           children: [
             Expanded(

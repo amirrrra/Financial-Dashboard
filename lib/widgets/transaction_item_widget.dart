@@ -23,7 +23,7 @@ class TransactionItemWidget extends StatelessWidget {
             4,
             (index) {
               return Padding(
-                padding: const EdgeInsets.only(bottom: 20.0),
+                padding: const EdgeInsets.only(bottom: 20),
                 child: Text(
                   TransactionModel.titles[index],
                   style: AppStyles.regular16(context),

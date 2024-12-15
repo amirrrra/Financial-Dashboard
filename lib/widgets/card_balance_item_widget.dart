@@ -20,26 +20,26 @@ class CardBalanceItemWidget extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.end,
       children: [
         FittedBox(
-          child: Text.rich(
-            TextSpan(
-              children: [
-                TextSpan(
-                  text: '\$',
-                  style: AppStyles.semi30(context).copyWith(color: color),
-                ),
-                TextSpan(
-                  text: ' $value',
-                  style: textStyle ??
-                      AppStyles.semi30(context).copyWith(color: color),
-                ),
-              ],
-            ),
+          child: Row(
+            children: [
+              Text(
+                '\$',
+                style: AppStyles.semi30(context).copyWith(color: color),
+              ),
+              Text(
+                ' $value',
+                style: textStyle ??
+                    AppStyles.semi30(context).copyWith(color: color),
+              ),
+            ],
           ),
         ),
-        Text(
-          balance,
-          style: AppStyles.regular16(context),
-        )
+        FittedBox(
+          child: Text(
+            balance,
+            style: AppStyles.regular16(context),
+          ),
+        ),
       ],
     );
   }

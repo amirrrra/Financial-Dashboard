@@ -18,12 +18,9 @@ class _CardLeftSectionState extends State<CardLeftSection> {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Padding(
-          padding: const EdgeInsets.only(bottom: 70), //chart height
-          child: GestureDetector(
-            onTap: () => _goToPreviousPage(),
-            child: SvgPicture.asset(AppImages.left),
-          ),
+       transferIcon(
+          onTap: () => _goToPreviousPage(),
+          image: AppImages.left,
         ),
         SizedBox(width: 10),
         Expanded(
@@ -37,14 +34,24 @@ class _CardLeftSectionState extends State<CardLeftSection> {
           ),
         ),
         SizedBox(width: 10),
-        Padding(
-          padding: const EdgeInsets.only(bottom: 70),
-          child: GestureDetector(
-            onTap: () => _goToNextPage(),
-            child: SvgPicture.asset(AppImages.right),
-          ),
+        transferIcon(
+          onTap: () => _goToNextPage(),
+          image: AppImages.right,
         ),
       ],
+    );
+  }
+
+  Padding transferIcon({
+    required void Function() onTap,
+    required String image,
+  }) {
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 70),
+      child: GestureDetector(
+        onTap: onTap,
+        child: SvgPicture.asset(image),
+      ),
     );
   }
 
