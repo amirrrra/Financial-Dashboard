@@ -1,5 +1,6 @@
 import 'package:financial_dashboard/utils/app_colors.dart';
 import 'package:financial_dashboard/utils/app_styles.dart';
+import 'package:financial_dashboard/widgets/custom_fitted_box_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
@@ -8,6 +9,7 @@ class ButtonWidget extends StatelessWidget {
   final String icon;
   final double horizontalPadding;
   final double verticalPadding;
+
   const ButtonWidget({
     super.key,
     required this.text,
@@ -33,18 +35,21 @@ class ButtonWidget extends StatelessWidget {
       ),
       onPressed: () {},
       child: Row(
+        // mainAxisSize: MainAxisSize.min, 
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          FittedBox(
-            fit: BoxFit.scaleDown,
-            child: Text(
-              text,
-              style: AppStyles.bold14(context).copyWith(
-                color: AppColors.grey3F,
+          Flexible(
+            child: CustomFittedBoxWidget(
+              child: Text(
+                text,
+                style: AppStyles.bold14(context).copyWith(
+                  color: AppColors.grey3F,
+                ),
               ),
             ),
           ),
-          SvgPicture.asset(icon)
+          const SizedBox(width: 8), 
+          SvgPicture.asset(icon),
         ],
       ),
     );

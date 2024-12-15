@@ -11,25 +11,26 @@ class CardRightSection extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.end,
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children:  [
         CardBalanceItemWidget(
           textStyle: AppStyles.semi40(context),
           value: '2850.75',
           balance: 'Current balance',
         ),
-        SizedBox(height: 12),
+        SizedBox(height: 30),
         CardBalanceItemWidget(
           value: '1500.50',
           balance: 'Income',
           color: AppColors.green,
         ),
-        SizedBox(height: 12),
+        SizedBox(height: 30),
         CardBalanceItemWidget(
           value: '350.60',
           balance: 'Outcome',
           color: AppColors.red,
         ),
-        SizedBox(height: 12),
+        SizedBox(height: 30),
         CardDeactivateWidget(),
       ],
     );

@@ -12,7 +12,7 @@ class OutcomeItemsListWidget extends StatelessWidget {
         3,
         (index) {
           return Padding(
-            padding: const EdgeInsets.only(bottom: 20),
+            padding: const EdgeInsets.only(bottom: 20,right: 20),
             child: OutcomeItemWidget(
               outcomeModel: OutcomeModel.outcomeList[index],
             ),

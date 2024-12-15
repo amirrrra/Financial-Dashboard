@@ -11,27 +11,30 @@ class HeaderWidget extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(
-              'Weekly sumup',
-              style: AppStyles.semi44(context),
-            ),
-            Text(
-              'Get summary of your weekly online transactions here.',
-              style: AppStyles.regular16(context),
-            ),
-          ],
+        // Left side content
+        Expanded(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                'Weekly sumup',
+                style: AppStyles.semi44(context),
+              ),
+              Text(
+                'Get summary of your weekly online transactions here.',
+                style: AppStyles.regular16(context),
+              ),
+            ],
+          ),
         ),
 
         // Right side content
         Row(
           children: [
             SvgPicture.asset(AppImages.mail),
-            const SizedBox(width: 16), // Add some spacing between icons
+            const SizedBox(width: 16),
             SvgPicture.asset(AppImages.bell),
-            const SizedBox(width: 16), // Add some spacing before profile
+            const SizedBox(width: 16),
 
             // Profile section
             Row(

@@ -1,4 +1,5 @@
 import 'package:financial_dashboard/utils/app_styles.dart';
+import 'package:financial_dashboard/widgets/custom_fitted_box_widget.dart';
 import 'package:flutter/material.dart';
 
 class CardBalanceItemWidget extends StatelessWidget {
@@ -19,7 +20,7 @@ class CardBalanceItemWidget extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.end,
       children: [
-        FittedBox(
+        CustomFittedBoxWidget(
           child: Row(
             children: [
               Text(
@@ -34,7 +35,7 @@ class CardBalanceItemWidget extends StatelessWidget {
             ],
           ),
         ),
-        FittedBox(
+        CustomFittedBoxWidget(
           child: Text(
             balance,
             style: AppStyles.regular16(context),

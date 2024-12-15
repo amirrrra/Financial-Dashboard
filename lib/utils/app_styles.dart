@@ -164,7 +164,7 @@ double getScaleFactor(BuildContext context) {
   if (screenWidth < SizeConfig.tablet) {
     return screenWidth / 550; // Mobile Scale Factor
   } else if (screenWidth < SizeConfig.desktop) {
-    return screenWidth / 1000; // Tablet Scale Factor
+    return screenWidth / 1200; // Tablet Scale Factor
   } else {
     return screenWidth / 1800; // Desktop Scale Factor
   }
