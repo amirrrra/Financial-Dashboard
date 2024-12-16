@@ -8,6 +8,7 @@ class TransactionWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final screenWidth = MediaQuery.sizeOf(context).width;
     return CustomContainerWidget(
       child: Padding(
         padding: const EdgeInsets.all(20),
@@ -19,7 +20,20 @@ class TransactionWidget extends StatelessWidget {
               style: AppStyles.semi22(context),
             ),
             const SizedBox(height: 12),
-            TransactionItemWidget()
+            screenWidth >= 500
+                ? TransactionItemWidget()
+                : SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    child: ConstrainedBox(
+                      constraints: BoxConstraints(
+                        minWidth: screenWidth,
+                      ),
+                      child: SingleChildScrollView(
+                        scrollDirection: Axis.vertical,
+                        child: TransactionItemWidget(),
+                      ),
+                    ),
+                  )
           ],
         ),
       ),

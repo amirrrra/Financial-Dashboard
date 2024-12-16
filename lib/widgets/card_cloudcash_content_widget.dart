@@ -12,9 +12,17 @@ class CardCloudcashContentWidget extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
+        Flexible(
+          child: SizedBox(height: 12),
+        ),
         CardCloudLeadingWidget(),
+        Spacer(),
         CardCloudMiddleWidget(),
+        Spacer(),
         CardCloudTrailingWidget(),
+        Flexible(
+          child: SizedBox(height: 12),
+        ),
       ],
     );
   }

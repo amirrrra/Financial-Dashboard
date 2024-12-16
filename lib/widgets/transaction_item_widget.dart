@@ -11,10 +11,10 @@ class TransactionItemWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Table(
       columnWidths: const {
-        0: FlexColumnWidth(5),
-        1: FlexColumnWidth(3),
+        0: FlexColumnWidth(5.5),
+        1: FlexColumnWidth(2.2),
         2: FlexColumnWidth(3),
-        3: FlexColumnWidth(1.5),
+        3: FlexColumnWidth(1.8),
       },
       children: [
         // Header row

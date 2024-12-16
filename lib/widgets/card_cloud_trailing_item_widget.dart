@@ -20,7 +20,6 @@ class CardCloudTrailingItemWidget extends StatelessWidget {
           title,
           style: AppStyles.regular13(context),
         ),
-        const SizedBox(height: 5),
         Text(
           subTitle,
           style: AppStyles.medium16(context).copyWith(

@@ -16,7 +16,7 @@ class CardCloudcashWidget extends StatelessWidget {
     return AspectRatio(
       aspectRatio: 320 / 206,
       child: Container(
-        padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+        padding: const EdgeInsets.symmetric(horizontal: 24),
         decoration: BoxDecoration(
           gradient: LinearGradient(
             begin: Alignment(0, -1),

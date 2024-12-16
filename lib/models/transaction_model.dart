@@ -35,14 +35,14 @@ class TransactionModel {
       reciever: 'ElectroMen Market',
       type: 'Shopping',
       date: '14 Dec 2020',
-      amount: '\$250.00',
+      amount: '\$250',
     ),
     TransactionModel(
       icon: AppImages.restaurant,
       reciever: 'Fiorgio Restaurant',
       type: 'Food',
       date: '07 Dec 2020',
-      amount: '\$19.50',
+      amount: '\$19.5',
     ),
     TransactionModel(
       icon: AppImages.user,
@@ -50,13 +50,6 @@ class TransactionModel {
       type: 'Sport',
       date: '06 Dec 2020',
       amount: '\$350',
-    ),
-    TransactionModel(
-      icon: AppImages.user,
-      reciever: 'Ann Marlin',
-      type: 'Shopping',
-      date: '30 Dec 2020',
-      amount: '\$430',
     ),
     TransactionModel(
       icon: AppImages.user,
