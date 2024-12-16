@@ -1,3 +1,4 @@
+import 'package:financial_dashboard/utils/app_colors.dart';
 import 'package:financial_dashboard/widgets/drawer_body_widget.dart';
 import 'package:financial_dashboard/widgets/drawer_header_widget.dart';
 import 'package:financial_dashboard/widgets/drawer_trailing_widget.dart';
@@ -8,9 +9,13 @@ class DrawerWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Padding(
+    final screenWidth = MediaQuery.sizeOf(context).width;
+
+    return Container(
       padding: EdgeInsets.symmetric(horizontal: 30),
-      child: CustomScrollView(
+      width: screenWidth * .8,
+      color: AppColors.white,
+      child: const CustomScrollView(
         slivers: [
           SliverToBoxAdapter(
             child: Column(

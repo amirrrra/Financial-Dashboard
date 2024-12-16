@@ -1,10 +1,13 @@
+import 'package:financial_dashboard/utils/app_colors.dart';
 import 'package:financial_dashboard/utils/app_images.dart';
 import 'package:financial_dashboard/utils/app_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
 class HeaderProfileMobileWidget extends StatelessWidget {
-  const HeaderProfileMobileWidget({super.key});
+  final void Function()? onTap;
+
+  const HeaderProfileMobileWidget({super.key, this.onTap});
 
   @override
   Widget build(BuildContext context) {
@@ -13,6 +16,15 @@ class HeaderProfileMobileWidget extends StatelessWidget {
       children: [
         Row(
           children: [
+            GestureDetector(
+              onTap: onTap,
+              child: Icon(
+                Icons.menu,
+                color: AppColors.greyE3,
+                size: 25,
+              ),
+            ),
+            const SizedBox(width: 16),
             SvgPicture.asset(AppImages.mail),
             const SizedBox(width: 16),
             SvgPicture.asset(AppImages.bell),

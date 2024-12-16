@@ -12,7 +12,7 @@ class LayoutDesktopWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: const [
-        // Drawwer
+        // Drawer
         Expanded(
           flex: 3,
           child: DrawerWidget(),
