@@ -12,7 +12,7 @@ class TransactionItemWidget extends StatelessWidget {
     return Table(
       columnWidths: const {
         0: FlexColumnWidth(5.5),
-        1: FlexColumnWidth(2.2),
+        1: FlexColumnWidth(2.3),
         2: FlexColumnWidth(3),
         3: FlexColumnWidth(1.8),
       },

@@ -29,7 +29,7 @@ class GoalsItemsListWidget extends StatelessWidget {
                   padding: const EdgeInsets.only(
                     right: 14,
                     top: 12,
-                    bottom: 45,
+                    bottom: 30,
                     left: 2,
                   ),
                   child: GoalsItemWidget(

@@ -24,7 +24,6 @@ class _GoalsWidgetState extends State<GoalsWidget> {
           'Goals',
           style: AppStyles.semi22(context),
         ),
-        const SizedBox(height: 12),
         Row(
           children: [
             Expanded(
