@@ -14,7 +14,7 @@ class LayoutMobileWidget extends StatelessWidget {
         child: Column(
           children: [
             HeaderWidget(),
-            SizedBox(height: 40),
+            SizedBox(height: 12),
             SectionCardsAndTransactions(),
             SizedBox(height: 30),
             SectionGoalsOutcomeAndTransaction(),
