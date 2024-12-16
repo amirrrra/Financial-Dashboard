@@ -1,3 +1,4 @@
+import 'package:financial_dashboard/utils/app_colors.dart';
 import 'package:financial_dashboard/utils/app_styles.dart';
 import 'package:flutter/material.dart';
 
@@ -17,12 +18,14 @@ class CardCloudTrailingItemWidget extends StatelessWidget {
       children: [
         Text(
           title,
-          style: AppStyles.regular9(context),
+          style: AppStyles.regular13(context),
         ),
         const SizedBox(height: 5),
         Text(
           subTitle,
-          style: AppStyles.medium14(context),
+          style: AppStyles.medium16(context).copyWith(
+            color: AppColors.white,
+          ),
         ),
       ],
     );

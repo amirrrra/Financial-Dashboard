@@ -4,9 +4,9 @@ import 'package:financial_dashboard/utils/size_config.dart';
 import 'package:flutter/material.dart';
 
 abstract class AppStyles {
-  static TextStyle regular9(BuildContext context) {
+  static TextStyle regular13(BuildContext context) {
     return TextStyle(
-      fontSize: getResponsiveFontSize(context, 9),
+      fontSize: getResponsiveFontSize(context, 13),
       color: AppColors.white,
     );
   }
@@ -39,13 +39,13 @@ abstract class AppStyles {
     );
   }
 
-  static TextStyle medium14(BuildContext context) {
-    return TextStyle(
-      fontSize: getResponsiveFontSize(context, 14),
-      fontWeight: FontWeight.w500,
-      color: AppColors.white,
-    );
-  }
+  // static TextStyle medium14(BuildContext context) {
+  //   return TextStyle(
+  //     fontSize: getResponsiveFontSize(context, 16),
+  //     fontWeight: FontWeight.w500,
+  //     color: AppColors.white,
+  //   );
+  // }
 
   static TextStyle medium16(BuildContext context) {
     return TextStyle(
@@ -108,13 +108,7 @@ abstract class AppStyles {
     );
   }
 
-  static TextStyle bold12(BuildContext context) {
-    return TextStyle(
-      fontSize: getResponsiveFontSize(context, 12),
-      fontWeight: FontWeight.bold,
-      color: AppColors.white.withOpacity(0.4),
-    );
-  }
+
 
   static TextStyle bold14(BuildContext context) {
     return TextStyle(
@@ -132,9 +126,9 @@ abstract class AppStyles {
     );
   }
 
-  static TextStyle quickMedium20(BuildContext context) {
+  static TextStyle quickMedium28(BuildContext context) {
     return TextStyle(
-      fontSize: getResponsiveFontSize(context, 20),
+      fontSize: getResponsiveFontSize(context, 28),
       fontWeight: FontWeight.w500,
       fontFamily: Constants.quicksand,
       color: AppColors.white,
@@ -144,6 +138,14 @@ abstract class AppStyles {
   static TextStyle quickBold20(BuildContext context) {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, 20),
+      fontWeight: FontWeight.bold,
+      fontFamily: Constants.quicksand,
+      color: AppColors.blueDark,
+    );
+  }
+  static TextStyle quickBold24(BuildContext context) {
+    return TextStyle(
+      fontSize: getResponsiveFontSize(context, 24),
       fontWeight: FontWeight.bold,
       fontFamily: Constants.quicksand,
       color: AppColors.white,
@@ -162,7 +164,7 @@ double getResponsiveFontSize(BuildContext context, double fontSize) {
 double getScaleFactor(BuildContext context) {
   final double screenWidth = MediaQuery.sizeOf(context).width;
   if (screenWidth < SizeConfig.tablet) {
-    return screenWidth / 550; // Mobile Scale Factor
+    return screenWidth / 800; // Mobile Scale Factor
   } else if (screenWidth < SizeConfig.desktop) {
     return screenWidth / 1200; // Tablet Scale Factor
   } else {

@@ -3,14 +3,14 @@ import 'package:financial_dashboard/widgets/card_pageview_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
-class CardLeftSection extends StatefulWidget {
-  const CardLeftSection({super.key});
+class CardSectionCloudcash extends StatefulWidget {
+  const CardSectionCloudcash({super.key});
 
   @override
-  State<CardLeftSection> createState() => _CardLeftSectionState();
+  State<CardSectionCloudcash> createState() => _CardSectionCloudcashState();
 }
 
-class _CardLeftSectionState extends State<CardLeftSection> {
+class _CardSectionCloudcashState extends State<CardSectionCloudcash> {
   final PageController _pageController = PageController();
   int activatedIndex = 0;
 
@@ -18,7 +18,7 @@ class _CardLeftSectionState extends State<CardLeftSection> {
   Widget build(BuildContext context) {
     return Row(
       children: [
-       transferIcon(
+        transferIcon(
           onTap: () => _goToPreviousPage(),
           image: AppImages.left,
         ),

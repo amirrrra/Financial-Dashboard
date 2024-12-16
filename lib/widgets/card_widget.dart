@@ -1,6 +1,5 @@
 import 'package:financial_dashboard/utils/app_styles.dart';
-import 'package:financial_dashboard/widgets/card_left_section.dart';
-import 'package:financial_dashboard/widgets/card_right_section.dart';
+import 'package:financial_dashboard/widgets/card_item_widget.dart';
 import 'package:financial_dashboard/widgets/custom_container_widget.dart';
 import 'package:flutter/material.dart';
 
@@ -20,18 +19,7 @@ class CardWidget extends StatelessWidget {
               style: AppStyles.semi22(context),
             ),
             const SizedBox(height: 12),
-            const Row(
-              children: [
-                Expanded(
-                  flex: 3,
-                  child: CardLeftSection(),
-                ),
-                SizedBox(width: 20), 
-                Expanded(
-                  child: CardRightSection(),
-                ),
-              ],
-            ),
+            CardItemWidget(),
           ],
         ),
       ),

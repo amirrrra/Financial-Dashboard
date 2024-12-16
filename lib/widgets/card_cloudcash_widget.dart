@@ -1,7 +1,5 @@
 import 'package:financial_dashboard/utils/app_images.dart';
-import 'package:financial_dashboard/widgets/card_cloud_leading_widget.dart';
-import 'package:financial_dashboard/widgets/card_cloud_middle_widget.dart';
-import 'package:financial_dashboard/widgets/card_cloud_trailing_widget.dart';
+import 'package:financial_dashboard/widgets/card_cloudcash_content_widget.dart';
 import 'package:flutter/material.dart';
 
 class CardCloudcashWidget extends StatelessWidget {
@@ -18,7 +16,7 @@ class CardCloudcashWidget extends StatelessWidget {
     return AspectRatio(
       aspectRatio: 320 / 206,
       child: Container(
-        padding: const EdgeInsets.all(20),
+        padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
         decoration: BoxDecoration(
           gradient: LinearGradient(
             begin: Alignment(0, -1),
@@ -33,15 +31,7 @@ class CardCloudcashWidget extends StatelessWidget {
             Radius.circular(32),
           ),
         ),
-        child: const Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            CardCloudLeadingWidget(),
-            CardCloudMiddleWidget(),
-            CardCloudTrailingWidget(),
-          ],
-        ),
+        child: CardCloudcashContentWidget(),
       ),
     );
   }

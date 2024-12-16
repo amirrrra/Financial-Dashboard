@@ -1,3 +1,4 @@
+import 'package:financial_dashboard/utils/app_colors.dart';
 import 'package:financial_dashboard/utils/app_styles.dart';
 import 'package:flutter/material.dart';
 
@@ -11,11 +12,13 @@ class CardCloudLeadingWidget extends StatelessWidget {
       children: [
         Text(
           'cloudcash',
-          style: AppStyles.quickBold20(context),
+          style: AppStyles.quickBold24(context),
         ),
         Text(
           'PREMIUM ACCOUNT',
-          style: AppStyles.bold12(context),
+          style: AppStyles.bold14(context).copyWith(
+            color: AppColors.white.withOpacity(0.4),
+          ),
         ),
       ],
     );

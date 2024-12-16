@@ -2,12 +2,12 @@ import 'package:financial_dashboard/utils/app_styles.dart';
 import 'package:financial_dashboard/widgets/custom_fitted_box_widget.dart';
 import 'package:flutter/material.dart';
 
-class CardBalanceItemWidget extends StatelessWidget {
+class CardBalanceWidget extends StatelessWidget {
   final TextStyle? textStyle;
   final String value;
   final String balance;
   final Color? color;
-  const CardBalanceItemWidget({
+  const CardBalanceWidget({
     super.key,
     this.textStyle,
     required this.value,
