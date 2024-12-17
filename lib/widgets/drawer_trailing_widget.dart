@@ -27,7 +27,7 @@ class DrawerTrailingWidget extends StatelessWidget {
           text: 'Upgrade to premium',
           icon: AppImages.upgrade,
           horizontalPadding: 18,
-          verticalPadding: 22,
+          buttonheight: 44,
         ),
         const SizedBox(
           height: 30,

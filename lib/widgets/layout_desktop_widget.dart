@@ -42,7 +42,7 @@ class LayoutDesktopWidget extends StatelessWidget {
                               flex: 7,
                               child: SectionCardsAndTransactions(),
                             ),
-                            SizedBox(width: 22),
+                            SizedBox(width: 32),
                             // Goals, Outcome And New Transactions Section
                             Expanded(
                               flex: 6,

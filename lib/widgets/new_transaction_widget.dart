@@ -37,7 +37,7 @@ class NewTransactionWidget extends StatelessWidget {
                     text: 'Send Transfer',
                     icon: AppImages.send,
                     horizontalPadding: 14,
-                    verticalPadding: 18,
+                    buttonheight: 36,
                   ),
                 ),
               ],

@@ -8,23 +8,23 @@ class ButtonWidget extends StatelessWidget {
   final String text;
   final String icon;
   final double horizontalPadding;
-  final double verticalPadding;
+  final double buttonheight;
 
   const ButtonWidget({
     super.key,
     required this.text,
     required this.icon,
     required this.horizontalPadding,
-    required this.verticalPadding,
+    required this.buttonheight,
   });
 
   @override
   Widget build(BuildContext context) {
     return TextButton(
       style: TextButton.styleFrom(
+        fixedSize: Size.fromHeight(buttonheight),
         padding: EdgeInsets.symmetric(
           horizontal: horizontalPadding,
-          vertical: verticalPadding,
         ),
         backgroundColor: AppColors.yellow,
         shape: const RoundedRectangleBorder(
@@ -35,7 +35,6 @@ class ButtonWidget extends StatelessWidget {
       ),
       onPressed: () {},
       child: Row(
-        // mainAxisSize: MainAxisSize.min, 
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Flexible(
